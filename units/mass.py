@@ -1,8 +1,8 @@
 def kg_to_lb(kg: float) -> float:
-    """Convert kilograms to pounds (1 kg = 2.20462 lb)."""
-    return kg * 2.20462
+    """Convert kilograms to pounds using 0.45359237 kilograms per pound."""
+    return kg / 0.45359237
 
 
 def lb_to_kg(lb: float) -> float:
-    """Convert pounds to kilograms (1 lb = 0.453592 kg)."""
-    return lb * 0.453592
+    """Convert pounds to kilograms using 0.45359237 kilograms per pound."""
+    return lb * 0.45359237
