@@ -3,16 +3,16 @@ from units.mass import kg_to_lb, lb_to_kg
 
 def test_kg_to_lb():
     assert kg_to_lb(0) == 0.0
-    assert abs(kg_to_lb(1) - 2.20462) < 1e-10
-    assert abs(kg_to_lb(5) - 11.0231) < 1e-12
-    assert abs(kg_to_lb(100) - 220.462) < 1e-12
+    assert abs(kg_to_lb(1) - 2.2046226218487757) < 1e-10
+    assert abs(kg_to_lb(5) - 11.023113109243878) < 1e-12
+    assert abs(kg_to_lb(100) - 220.46226218487757) < 1e-12
 
 
 def test_lb_to_kg():
     assert lb_to_kg(0) == 0.0
-    assert abs(lb_to_kg(1) - 0.453592) < 1e-10
-    assert abs(lb_to_kg(10) - 4.53592) < 1e-12
-    assert abs(lb_to_kg(220.462) - 100.0) < 1e-6
+    assert abs(lb_to_kg(1) - 0.45359237) < 1e-10
+    assert abs(lb_to_kg(10) - 4.5359237) < 1e-12
+    assert abs(lb_to_kg(100 / 0.45359237) - 100.0) < 1e-6
 
 
 def test_roundtrip():
