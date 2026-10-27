@@ -1,6 +1,6 @@
 def meters_to_feet(m: float) -> float:
-    """Convert meters to feet. 1 meter = 3.28084 feet."""
-    return m * 3.28084
+    """Convert meters to feet using 0.3048 meters per foot."""
+    return m / 0.3048
 
 
 def feet_to_meters(ft: float) -> float:

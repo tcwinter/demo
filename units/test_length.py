@@ -3,9 +3,9 @@ from units.length import meters_to_feet, feet_to_meters
 
 def test_meters_to_feet():
     assert meters_to_feet(0) == 0.0
-    assert abs(meters_to_feet(1) - 3.28084) < 1e-10
-    assert abs(meters_to_feet(10) - 32.8084) < 1e-10
-    assert abs(meters_to_feet(100) - 328.084) < 1e-10
+    assert abs(meters_to_feet(1) - (1 / 0.3048)) < 1e-10
+    assert abs(meters_to_feet(10) - (10 / 0.3048)) < 1e-10
+    assert abs(meters_to_feet(100) - (100 / 0.3048)) < 1e-10
 
 
 def test_feet_to_meters():
